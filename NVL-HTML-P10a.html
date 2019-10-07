@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form method="post" action="procesar-datos.php">
+		<fieldset>
+			<legend>NIVEL DE SATISFACCION: </legend>
+			<div>
+				<label for="codigo-postal">CODIGO POSTAL:</label>
+				<input id="codigo-postal" type="text" placeholder="Ej. 28018">
+			</div><br>
+
+			<div id="satisfacción">
+				<label>NIVEL DE SATISFACCIÓN:
+					<input id="nivel-5" type="radio" name="5">MUY SATISFECHO&nbsp;
+					<input id="nivel-4" type="radio" name="5">BASTANTE SATISFECHO&nbsp;
+					<input id="nivel-3" type="radio" name="5">ALGO SATISFECHO&nbsp; 
+					<input id="nivel-2" type="radio" name="5">POCO SATISFECHO&nbsp; 
+					<input id="nivel-1" type="radio" name="5">NADA SATISFECHO 
+				</label>
+			</div> <br>
+
+			<div>
+				<label for="email">EMAIL:</label>
+				<input id="email" type="email" placeholder="ejempl@gmail.com">
+			</div><br>
+
+			<div>
+				<label for="comentario-positivo">DESCRIBA A CONTINUACION LOS ASPECTOS POSITIVOS DEL PRODUCTO:</label><br>
+				<textarea id="comentario-positivo" rows="3" cols="75" placeholder="Me ha gustado..."></textarea>
+			</div><br>
+
+			<div>
+				<label for="comentario-negativo">DESCRIBA A CONTINUACION LOS ASPECTOS NEGATIVOS DEL PRODUCTO:</label><br>
+				<TEXTAREA id="comentario-negativo" rows="3" cols="75" placeholder="No me ha gustado..."></TEXTAREA>
+			</div><br>
+
+			<div>
+				<h2>A CONTINUACION MARQUE UNA OPCION PARA CADA CASO:</h2><br>
+				<div id="precio">
+					<label>PRECIO:
+						<input type="radio" name="precio">EXCELENTE&nbsp;
+						<input type="radio" name="precio">BUENO &nbsp;
+						<input type="radio" name="precio">REGULAR &nbsp; 
+						<input type="radio" name="precio">PESIMO &nbsp; 
+					</label>&nbsp;
+				</div><br>
+
+				<div id="diseño">
+					<label>DISEÑO:
+						<input type="radio" name="diseño">EXCELENTE &nbsp;
+						<input type="radio" name="diseño">BUENO &nbsp;
+						<input type="radio" name="diseño">REGULAR &nbsp; 
+						<input type="radio" name="diseño">PESIMO &nbsp; 
+					</label>&nbsp;
+				</div><br>
+
+				<div id="calidad">
+					<label>CALIDAD:
+						<input type="radio" name="calidad">EXCELENTE &nbsp;
+						<input type="radio" name="calidad">BUENO &nbsp;
+						<input type="radio" name="calidad">REGULAR &nbsp; 
+						<input type="radio" name="calidad">PESIMO &nbsp; 
+					</label>&nbsp;
+				</div><br>
+
+				<div id="tamaño">
+					<label>TAMAÑO:
+						<input type="radio" name="tamaño">EXCELENTE &nbsp;
+						<input type="radio" name="tamaño">BUENO &nbsp;
+						<input type="radio" name="tamaño">REGULAR &nbsp; 
+						<input type="radio" name="tamaño">PESIMO &nbsp;
+					</label>&nbsp;
+				</div><br><br>
+			<div>
+
+			<h2>A CONTINUACIO SELECCIONE UNA OPCION PARA CADA CASO:</h2><br>
+				
+			<div>
+				<div>
+				<label for="precio-select">PRECIO</label>
+					<select id="precio-select">
+						<option value="excelente">EXCELENTE</option>
+						<option value="bueno">BUENO</option>
+						<option value="regular">REGULAR</option>
+						<option value="pésimo">PESIMO</option>
+					</select>
+				</div><br>
+
+				<div>
+				<label for="diseño-select">DISEÑO</label>
+					<select id="diseño-select">
+						<option value="excelente">EXCELENTE</option>
+						<option value="bueno">BUENO</option>
+						<option value="regular">REGULAR</option>
+						<option value="pésimo">PESIMO</option>
+					</select>
+				</div><br>
+
+				<div>
+				<label for="calidad-select">CALIDAD</label>
+					<select id="calidad-select">
+						<option value="excelente">EXCELENTE</option>
+						<option value="bueno">BUENO</option>
+						<option value="regular">REGULAR</option>
+						<option value="pésimo">PESIMO</option>
+					</select>
+				</div><br>
+				
+
+				<div>
+				<label for="tamaño-select">TAMAÑO</label>
+					<select id="tamaño-select">
+						<option value="excelente">EXCELENTE</option>
+						<option value="bueno">BUENO</option>
+						<option value="regular">REGULAR</option>
+						<option value="pésimo">PESIMO</option>
+					</select>
+				</div><br>
+
+				<input type="submit" value="enviar encuesta"><br>
+
+				<h5>Garcias por su colaboración</h5>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
